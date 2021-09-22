@@ -1,10 +1,10 @@
 # Bitcoin Peer-to-Peer Lending Platform
 
-A trustless Bitcoin lending platform that allows peers to lend money directly to one another with agreed-upon terms. 
+A trustless Bitcoin lending platform that allows peers to lend money directly to one another with agreed-upon terms without involving a third party. 
 
-Users create a special purpose pseudonymous wallet used to loan funds and pay back loans. Each wallet is associated with its lending history, allowing potential lenders to evaluate the risk before making each loan. Borrowers are incentivized to maintain a positive lending history in order to attract lenders and qualify for lower rates. 
+Users create a special purpose pseudonymous wallet used to loan funds and pay back loans. Each wallet is associated with its lending history, allowing potential lenders to evaluate the wallet’s risk before making each loan. Borrowers are incentivized to maintain a positive lending history in order to attract lenders and qualify for lower rates. 
 
-The intent of this system is to provide access to capital to anyone in the world using the unstoppable currency of Bitcoin. Many people in the world do not have access to capital at all: the unbanked, individuals and small businesses in developing nations or underserved areas, and people who wish to opt out of the fiat economy. 
+The intent of this platform is to provide access to capital to everyone in the world using the unstoppable currency of Bitcoin. Many people in the world do not have access to capital at all: the unbanked, individuals and small businesses in developing nations or underserved areas, and people who wish to opt out of the fiat economy. This platform provides a way for two parties anywhere in the world to enter into a lending agreement, and it provides a safe framework for risk evaluation and loan repayment. 
 
 ## Lending Transactions
 
@@ -14,9 +14,25 @@ Once accepted and signed by both parties, the offer becomes a bonded transaction
 
 When the loan is paid back according to the terms, another transaction is created, recording the successful completion of the loan. 
 
-## Borrower Credit Score
+
+## Wallet
+
+A pseudonymous wallet functions much like a conventional Bitcoin wallet. In addition to storing the ledger of transactions, the wallet records the user’s lending and borrowing history, which is used to compute a creditworthiness score. 
+
+Lenders can use information contained in the wallet to judge the risk of potential borrowers. Borrowers’ wallets who have a history of successful repayment will be judged as low risk, and may qualify for lower interest rates. Wallets with limited history or who have failed to abide by loan terms will be perceived as high risk. 
+
+## Credit Score
 
 The borrower’s wallet contains a list of completed transactions, the amount of each loan, and its outcome. A creditworthiness score is computed based on the number of loans, the volume of money borrowed, the age of loans, and the ratio of successful to failed repayments. 
+
+## Making an Offer and Defining Terms
+
+Loan terms are determined by the user making the offer. The offer can be either to lend or to borrow Bitcoin. An offer can have the following elements: 
+
+- Amount of loan
+- Repayment schedule
+- Interest rate or flat repayment fee
+- Collateral deposit (predetermined amount or percent of the loan)
 
 ## Incentives
 
@@ -53,4 +69,4 @@ If a particular user wants to convert their coins to fiat, those coins can be tr
 
 This platform is similar in many ways to Bisq. However, unlike Bisq, no conversion to fiat is performed. 
 
-We all love Bisq, but the user interface is geared towards technical users. Bisq has a steep learning curve that may prevent many users from ever completing a transaction. 
+We all love Bisq, but the user interface is geared towards technical users. Bisq has a steep learning curve that may prevent many users from ever completing a transaction. Our aim is to build a platform that is easy to use and has a shallow learning curve.
